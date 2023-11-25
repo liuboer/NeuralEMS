@@ -1,1 +1,7 @@
 # NeuralEMS
+
+Code for the paper [A controllable neural network-based method for optimal energy management of fuel cell hybrid electric vehicles](http://dx.doi.org/10.1016/j.ijhydene.2023.10.215) published in ***International Journal of Hydrogen Energy***.
+
+## Description
+
+Neural Networks (NNs) can be used for energy management of hybrid vehicles, but they are hard to tune in inference to adapt to different driving conditions. To make the NN-based energy management strategy more flexible, this paper proposes a controllable NN for optimal energy management of fuel cell hybrid electric vehicles. Inspired by the equivalent factor in the Equivalent Consumption Minimization Strategy (ECMS), we introduce an adjustable target variable for the final state as an input to the NN-based strategy. During training, classification and regression networks with single-step and multi-step inputs are considered. An efficient shooting method and an adaptive method are then introduced to realize the precise control of the final state and online parameter adaptation. Simulations of the proposed method and the benchmarking method are carried out in different battery discharge modes. Results demonstrate that the proposed shooting neural classifier can achieve 99.7% fuel optimality of dynamic programming in a similar computational time to the shooting ECMS, and the proposed adaptive neural classifier can adapt to different driving conditions and has better fuel economy than the adaptive ECMS.
