@@ -11,7 +11,7 @@ par.dt = 1.0;
 cycle_info_cell = load('FCV_EMS_DP_advisor_results\cycle_info_cell');
 cycles_train = cycle_info_cell.cycle_info_cell([2,3,4,5,14,17,19,21,24,26,27,29,30,31,33,35],1);
 cycles_test_cs = cycle_info_cell.cycle_info_cell([6,11,16,22],1);
-cycles_test_cd = {'C_CFN','RealDC'};
+cycles_test_cd = {'NewAdded\C_CFN','NewAdded\RealDC'};
 
 if Flag == 0
     cycles = cycles_train;
@@ -48,7 +48,7 @@ for ij = 1:length(cycles)
 
 clear veh_spd;
 
-veh_spd = load(cycles{ij}); % nx1, km/h
+veh_spd = load(['..\StandardCycle_kph_column\' cycles{ij}]); % nx1, km/h
 
 name_cell = fieldnames(veh_spd);
 veh_spd = getfield(veh_spd,name_cell{1}) / 3.6; % m/s

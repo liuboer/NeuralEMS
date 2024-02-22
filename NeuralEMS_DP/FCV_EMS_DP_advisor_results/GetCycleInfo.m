@@ -1,6 +1,6 @@
 clear all; clc
 
-cycle_list = dir('D:\Data_Programs\BoLiu\MatlabTools\StandardDrivingCycles\StandardCycle_kph_column\*.mat');
+cycle_list = dir('..\..\StandardCycle_kph_column\*.mat');
 cycle_info = struct([]);
 for i = 1:length(cycle_list)
 cycle_list_name_i = cycle_list(i).name;

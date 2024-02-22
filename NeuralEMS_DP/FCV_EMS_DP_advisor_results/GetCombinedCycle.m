@@ -19,4 +19,4 @@ end
 
 C_CFN = repmat(C_CFN,1,1);
 
-save('D:\Data_Programs\BoLiu\MatlabTools\StandardDrivingCycles\StandardCycle_kph_column\C_CFN.mat','C_CFN')
+save('..\..\StandardCycle_kph_column\NewAdded\C_CFN.mat','C_CFN')
